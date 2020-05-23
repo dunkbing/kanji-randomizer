@@ -33,12 +33,10 @@ window.onload = function(){
 document.querySelector(".kanji").onclick = async function(){
     try {
         const kanji = await fetchKanji(grades[randomRange(0, grades.length-1)])
-        console.log(kanji)
         loadKanji(kanji)
         displayLoading(false)
     } catch (error) {
         alert("error, pls try again")
-        //console.log(error)
     }
     
 }
