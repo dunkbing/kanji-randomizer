@@ -20,13 +20,13 @@ async function fetchKanji(grade){
 window.onload = function(){
     this.displayLoading(false)
     const kan = {
-        grade: 3, 
-        jlpt: 3, 
-        kanji: "漢", 
+        grade: 6, 
+        jlpt: 1,
+        kanji: "誕", 
         kun_readings: [], 
-        name_readings: ["はん"], 
-        on_readings: ["カン"], 
-        meanings: ["Sino-", "China"]
+        name_readings: [], 
+        on_readings: ["タン"], 
+        meanings: ["nativity", "be born", "declension", "lie", "be arbitrary"]
     }
     this.loadKanji(kan)
 }
